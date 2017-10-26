@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('template', function () { #namaurlnya
+    return view('coba1'); #folder.namafile
+});
+Route::get('coba1', function () { #namaurlnya
+    return view('coba1'); #folder.namafile
+});
+
+Route::get('coba2', function () { #namaurlnya
+    return view('coba2'); #folder.namafile
+});
+
