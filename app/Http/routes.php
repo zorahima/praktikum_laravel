@@ -25,3 +25,8 @@ Route::get('coba2', function () { #namaurlnya
     return view('coba2'); #folder.namafile
 });
 
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
