@@ -3,11 +3,10 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notification\Notifable;
 
 class Admin extends Authenticatable
 {
-    use Notifable;
+    
     protected $guard = 'admin';
     /**
      * The attributes that are mass assignable.
